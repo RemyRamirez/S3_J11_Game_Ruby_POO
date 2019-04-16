@@ -2,16 +2,16 @@ Game developped by Rémy Ramirez
 
 Content of the repo:
 
-├── lib
-│   ├── player.rb
-│   └── game.rb
-├── app.rb
-├── app_2.rb
-├── app_3.rb
-├── README.md
-├── Gemfile
-├── Gemfile.lock
-└── Autres fichiers (.env, .gitignore)
+├── 1) lib
+│   ├── 1.a) player.rb
+│   └── 1.b) game.rb
+├── 2) app.rb
+├── 3) app_2.rb
+├── 4) app_3.rb
+├── 5) README.md
+├── 6) Gemfile
+├── 7) Gemfile.lock
+└── 8) Autres fichiers (.env, .gitignore)
 
 Resume:
 1) files player.rb and game.rb are ruby files.
