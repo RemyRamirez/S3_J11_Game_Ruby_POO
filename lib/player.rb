@@ -63,7 +63,7 @@ class HumanPlayer < Player
     end
 
     def search_weapon
-        @new_weapon_level = random(1..6)
+        @new_weapon_level = rand(1..6)
         puts "Tu as trouvé une arme de niveau #{@new_weapon_level}"
 
         if @new_weapon_level > @weapon_level
@@ -80,14 +80,15 @@ class HumanPlayer < Player
         if i == 1 
             puts "Rien trouvé sois pas deg"
         elsif i == 5 || i == 4 || i == 3 || i == 2
-            @@life_points += 50
+            @life_points += 50
             puts "Bravo, tu as trouvé un pack de +50 points de vie !"
         else i == 6
-            @@life_points += 80
+            @life_points += 80
             puts "Waow, tu as trouvé un pack de +80 points de vie !"
-                if @@life_points > 100 #if pour ne pas dépasser les 100 points de vie
-                    @@life_points = 100
-                end
+                
+        end
+        if @life_points > 100 #if pour ne pas dépasser les 100 points de vie
+            @life_points = 100
         end
     end
 
